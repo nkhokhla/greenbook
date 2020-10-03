@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./newsstyle.css">
+    <title>greenbook</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div>
+                        <span class="logo">green</span>
+                        <span class="logo">book</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <!--menu behaves badly on mobile, try it-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../shop/shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="log-in-out-tab" class="nav-link" data-toggle="modal" data-target="#exampleModalLong">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--<div class="banner">
+        <p id="banner-text">We care about the environment</p>
+    </div>-->
+
+    <section class='container'>
+      <div class="news-wrapper row" id="news-area">
+          
+
+      </div>
+    </section>
+  
+    <footer class="page-footer font-small">
+        <div class="social-media">
+            <img class="facebook" src="https://image.flaticon.com/icons/svg/20/20673.svg">
+            <img class="instagram" src="https://image.flaticon.com/icons/svg/87/87390.svg">
+            <img class="twitter" src="https://image.flaticon.com/icons/svg/733/733635.svg">
+          </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <span>greenbook inc.</span>
+        </div>
+    </footer>
+
+    <!-- Form modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Log in/Sign up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="form-carousel" class="carousel slide" data-interval="false">
+                        <div class="container-fluid">
+                            <ul class="form-navbar">
+                                <li id="nav-link-log-in" class="nav-item in-modal active" data-target="#form-carousel" data-slide-to="0">
+                                    <span class="nav-link disabled">Log in</span>
+                                </li>
+                                <li id="nav-link-sign-up" class="nav-item in-modal" data-target="#form-carousel" data-slide-to="1">
+                                    <span class="nav-link">Sign up</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <form id="log-in">
+                                    <div class="form-group">
+                                        <label for="input1">Email address</label>
+                                        <input name="email" type="text" class="form-control" id="input1" placeholder="Your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input3">Password</label>
+                                        <input name="password" type="password" class="form-control" id="input3" required>
+                                    </div>
+                                </form>
+                                <span id="alert-block"></span>
+                            </div>
+                            <div class="carousel-item">
+                                <form id="sign-up">
+                                    <div class="form-group">
+                                        <label for="input1">Full name</label>
+                                        <input name="fullName" type="text" class="form-control" id="input1" placeholder="Your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input3">Email address</label>
+                                        <input name="email" type="email" class="form-control" id="input3" placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input4">Age</label>
+                                        <input name="age" type="number" class="form-control" id="input4" placeholder="123">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="select1">How did you know about us?</label>
+                                        <select name="whyToVolunteer" class="form-control" id="select1" required>
+                                            <option>Social media</option>
+                                            <option>Friends' advice</option>
+                                            <option>It was told at school</option>
+                                            <option>Surfing the web</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input5">Password</label>
+                                        <input name="password" type="password" class="form-control" id="input5" placeholder="Password">
+                                    </div>
+                                </form>
+                                <span id="response-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-button" class="btn btn-success" onclick="signUp()">Log in</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!--<button type="button" class="btn btn-primary">Register</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Log out modal-->
+
+    <div id="logOutModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Log out</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="user-name"></p>
+                    <p>Do you want to log out?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="logOut()" data-dismiss="modal">Log out</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../bootstrap/jquery-3.3.1.slim.min.js"></script>
+<script src="../../bootstrap/popper.min.js"></script>
+<script src="../../bootstrap/bootstrap.min.js"></script>
+
+<script src="../../js/index.js"></script>
+<script src="./news-base.js"></script>
+<script src="./script.js"></script>
+</html>

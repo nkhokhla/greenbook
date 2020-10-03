@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="./registration.css">
+</head>
+
+<body>
+<header>
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div>
+                        <span class="logo">green</span>
+                        <span class="logo">book</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="#">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+</header>
+    <div class="container-fluid">
+        <h1>Sign up</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="input1">Full name</label>
+                <input name="fullName" type="text" class="form-control" id="input1" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="input2">City</label>
+                <input name="city" type="text" class="form-control" id="input2" placeholder="Your city" required>
+            </div>
+            <div class="form-group">
+                <label for="input3">Email address</label>
+                <input name="email" type="email" class="form-control" id="input3" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="input4">Age</label>
+                <input name="age" type="number" class="form-control" id="input4" placeholder="123" required>
+            </div>
+            <div class="form-group">
+                <label for="select1">How did you know about us?</label>
+                <select name="whyToVolunteer" class="form-control" id="select1" required>
+                    <option>Social media</option>
+                    <option>Friends' advice</option>
+                    <option>It was told at school</option>
+                    <option>Surfing the web</option>
+                    <option>Other:</option>             <!--optional text area should be there-->
+                </select>
+            </div>
+            <input class="btn btn-success btn-lg" type="submit" value="send">
+        </form>
+    </div>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <span>greenbook inc.</span>
+        </div>
+    </footer>
+</body>
+
+<script src="../../bootstrap/jquery-3.3.1.slim.min.js"></script>
+<script src="../../bootstrap/popper.min.js"></script>
+<script src="../../bootstrap/bootstrap.min.js"></script>
+
+<script src="../../js/index.js"></script>
+<script src="./registration.js"></script>
+
+</html>
+
+
+
+function signUp() {
+    let userData = CreateObject([...signUpForm]);
+    if (slideNum == 0){
+        for (let e in JSON.parse(localStorage.allUsers)) {
+            /*let userData = JSON.parse(localStorage.getItem("allUsers"));
+            console.log(userData.email == logInForm.email)
+            if ((userData.email == logInForm.email) == true){
+                break8*/
+            if (e.email == logInForm.email){
+                let state = false;
+                if (e.password = logInForm.password) {
+                    state = true;
+                }
+                if (state == false){
+                    logInForm.style.display = "none";
+                    alertBlock.innerText = "You are not a user. Sign up first!";
+                    alertBlock.style.display = "block";
+                } else {
+                    if (e.password = logInForm.password) {
+                        logInForm.style.display = "none";
+                        alertBlock.innerText = "You have successfully logged in";
+                        alertBlock.style.display = "block";
+                    } else {
+                        alertBlock.innerText = "Wrong password";
+                        alertBlock.style.display = "block";
+                    }
+
+
+                /*if (e.password = logInForm.password) {
+                    logInForm.style.display = "none";
+                    alertBlock.innerText = "You have successfully logged in";
+                    alertBlock.style.display = "block";
+                } else {
+                    alertBlock.innerText = "Wrong password";
+                    alertBlock.style.display = "block";
+                }*/
+            } /*else {
+                logInForm.style.display = "none";
+                alertBlock.innerText = "You are not a user. Sign up first!";
+                alertBlock.style.display = "block";
+            }*/
+        }
+
+    } else {
+        transformLocalStorageData(userData)
+        //localStorage.setItem("allUsers", JSON.stringify(userData))
+    }
+}

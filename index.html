@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+
+    <title>greenbook</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div>
+                        <span class="logo">green</span>
+                        <span class="logo">book</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <!--menu behaves badly on mobile, try it-->
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="#">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/shop/shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/news/allNews.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="log-in-out-tab" class="nav-link" data-toggle="modal" data-target="#exampleModalLong">Log in</a>
+                            </li>
+                        </ul>
+                        <!--<div class="row search-result-wrapper" id="search-result"></div>
+                    <form id="menu-search-form" class="form-inline my-2 my-lg-0">
+                        <input name="search-field" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button onclick = "setHome('home')" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    </div>-->
+                    </div>
+                </div>
+            </nav>
+            </div>
+    </header>
+
+    <div class="carousel">
+        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/forest.jpg" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <p>We care about the environment.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/plastic_2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <p>We solve global problems.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ourteam.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <p>We are a team.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--<div class="banner">
+        <p id="banner-text">We care about the environment</p>
+    </div>-->
+
+    <section class='container' id="who-we-are">
+        <h3>Who we are?</h3>
+        <p>Greenbook is an ecological foundation based in Lviv, Ukraine. Our activity takes place since October 2019. We think that sorting and recycling rubbish, planting trees and reducing one's carbon footprint should be involved into daily life of citizens - and we strive to achieve it. Our main business is selling e-books in cooperation with well-known shops. We strongly believe that only switching to electronic means of information completely can help us incredible rates of deforestation that occur today. When you buy a book in our store, 10% percent of your payment are spent on ecological initiatives - so you can be sure your money won't be wasted.
+            <div class="with-background">
+                <!--
+                    These banners look ugly on mobile devices. 
+                    If you know how to optimise it, optimise it
+                -->
+                <p class="booksLookingForward">Our books are looking forward to meeting you.</p>
+                <button class="btn btn-outline-light btn-lg"><a href='pages/shop/shop.html'>Go to the store</a></button>
+            </div>
+    </section>
+    <section class='container' id="volunteer">
+        <h3>Volunteer</h3>
+        <p>Do you want to contribute to the improvement of quality of our lives? We give you an opportunity to do it. Our volunteers plant trees, collect rubbish in forests and on beaches, share cars and even hold educational speeches. We have neither special requirements, nor limitations based on position or age.</p>
+        <div class="with-background">
+            <p class="community">Become a part of the community with one click.</p>
+            <button class="btn btn-outline-light btn-lg"><a data-toggle="modal" data-target="#exampleModalLong">Become a volunteer</a></button>
+        </div>
+    </section>
+    <section class='container' id="our-team">
+        <h3>Our team:</h3>
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <img class="rounded-circle" src="img/Maria.jpg" width="140" height="140">
+                <h2>Maria Bodnar</h2>
+                <p>Teamleader. Maria has working experience as a volunteer. She likes marshmellows cooked on the campfire.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="rounded-circle" src="img/Miha.jpg" width="140" height="140">
+                <h2>Mykhailo Hoy</h2>
+                <p>Administrator. Mykhailo is responsible for the proper work of all company's structures. He is on the last stage of tea dependency.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="rounded-circle" src="img/Danya.jpg" width="140" height="140">
+                <h2>Danylo Matviyenko</h2>
+                <p>Researcher. If you ever wondered what our ecological activity bases on, you should ask no one but Danylo. He is keen on going out with friends and discussing environmental problems.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="rounded-circle" src="img/Dmytro.jpg" width="140" height="140">
+                <h2>Dmytro Shumsky</h2>
+                <p>Advertiser. Owing to the powerful network of Dmytro's friends, you probably know about our existence. Also, he is a karate and ballroom dance lover.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small">
+        <div class="social-media">
+            <img class="facebook" src="https://image.flaticon.com/icons/svg/20/20673.svg">
+            <img class="instagram" src="https://image.flaticon.com/icons/svg/87/87390.svg">
+            <img class="twitter" src="https://image.flaticon.com/icons/svg/733/733635.svg">
+          </div>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <span>greenbook inc.</span>
+        </div>
+    </footer>
+    
+
+    <!-- Form modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Log in/Sign up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="form-carousel" class="carousel slide" data-interval="false">
+
+                        <div class="container-fluid">
+                            <ul class="form-navbar">
+                                <li id="nav-link-log-in" class="nav-item in-modal active" data-target="#form-carousel" data-slide-to="0">
+                                    <span class="nav-link disabled">Log in</span>
+                                </li>
+                                <li id="nav-link-sign-up" class="nav-item in-modal" data-target="#form-carousel" data-slide-to="1">
+                                    <span class="nav-link">Sign up</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <form id="log-in">
+
+                                    <div class="form-group">
+                                        <label for="input1">Email address</label>
+                                        <input name="email" type="text" class="form-control" id="input1" placeholder="Your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input3">Password</label>
+                                        <input name="password" type="password" class="form-control" id="input3" required>
+                                        <!--<input class="btn btn-success btn-lg" type="submit" value="send">-->
+                                        <!--</form>  if there is a problem with my form ending after the footer, closing tag should be there-->
+
+                                    </div>
+                                </form>
+                                <span id="alert-block"></span>
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <form id="sign-up">
+                                    <div class="form-group">
+                                        <label for="input1">Full name</label>
+                                        <input name="fullName" type="text" class="form-control" id="input1" placeholder="Your name">
+                                    </div>
+                                    <!--<div class="form-group">
+                                        <label for="input2">City</label>
+                                        <input name="city" type="text" class="form-control" id="input2" placeholder="Your city">
+                                    </div>-->
+                                    <div class="form-group">
+                                        <label for="input3">Email address</label>
+                                        <input name="email" type="email" class="form-control" id="input3" placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input4">Age</label>
+                                        <input name="age" type="number" class="form-control" id="input4" placeholder="123">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="select1">How did you know about us?</label>
+                                        <select name="whyToVolunteer" class="form-control" id="select1" required>
+                                            <option>Social media</option>
+                                            <option>Friends' advice</option>
+                                            <option>It was told at school</option>
+                                            <option>Surfing the web</option>
+                                            <option>Other</option>
+                                            <!--optional text area should be there-->
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input5">Password</label>
+                                        <input name="password" type="password" class="form-control" id="input5" placeholder="Password">
+                                    </div>
+
+                                    <!--<input class="btn btn-success btn-lg" type="submit" value="send">-->
+                                </form>
+                                <span id="response-block"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="modal-button" class="btn btn-success" onclick="signUp()">Log in</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!--<button type="button" class="btn btn-primary">Register</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Log out modal-->
+
+    <div id="logOutModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Log out</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="user-name"></p>
+                    <p>Do you want to log out?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="logOut()" data-dismiss="modal">Log out</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+
+<script src="js/index.js"></script>
+
+</html>

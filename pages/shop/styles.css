@@ -1,0 +1,174 @@
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+:root {
+  --g: #2da84b; /*green*/
+  --dg: #09661f; /*dark green*/
+}
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .slick-dots{
+      display: none !important;
+    }
+    button.slick-next::before {
+    color: transparent;
+    background-color: transparent;
+    }
+    button.slick-prev::before {
+    color: transparent;
+    background-color: transparent;
+    }
+    button.slick-prev{
+    height: 400px;
+    width: 200px;
+    }
+    button.slick-next{
+    height: 400px;
+    width: 200px;
+    }
+    .center.slider{
+      width: 1100px
+    }
+    .main{
+      display: flex;
+    }
+    .imgDiv{
+      height: auto;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .slick-slide img {
+     width: auto; 
+     width: 80% !important;
+    }
+
+body {
+font-family: 'Nanum Gothic', serif;
+}
+.logo {
+  font-size: 40px;
+  margin: 0;
+}
+.logo:first-of-type {
+  color: var(--g);
+}
+.logo:last-of-type {
+  color: black;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+/* .nav-item:hover .nav-link{
+  color: var(--g) !important;
+  border-bottom: 1.5px solid var(--g) !important;
+} */
+/*====================WHY DOESNT IT WORK????????=======================
+.nav-item:not(.active):hover ~.nav-item.active .nav-link {
+  color: #212529 !important;
+  border: none;
+}*/
+/* .nav-link {
+  color: #212529 !important;
+  padding-bottom: 7px;
+}
+.nav-link.disabled {
+  color: var(--g) !important;
+  border-bottom: 1.5px solid var(--g);
+} */
+.carousel-item {
+  height: 600px;
+}
+.carousel-item p {
+  font-size: 30px;
+}
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+.myVideo {
+  width: 100%;
+}
+.videoLabel{
+  position: absolute;
+  margin: 0 auto;
+}
+.videoTextWrapper{
+  min-height: 470px;
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+}
+.h1{
+  text-align: center;
+}
+.booksColor{
+  color:green;
+}
+.facebook{
+  height: 40px;
+  margin: 10px;
+}
+.instagram{
+  height: 40px;
+  margin: 10px;
+}
+.twitter{
+  height: 40px;
+  margin: 10px;
+}
+.social-media{  
+  display: flex;
+  justify-content: center;
+}
+.page-footer.font-small{
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  

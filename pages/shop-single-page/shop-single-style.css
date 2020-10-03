@@ -1,0 +1,124 @@
+/*  ============= Slick =============   */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .slider {
+      width: 50%;
+      margin: 100px auto;
+  }
+  .slick-slide {
+    margin: 0px 20px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-active {
+    opacity: .5;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+/*  ==========================   */
+
+.pictre-wrapper img, .modal-body img{
+    width:100%;
+}
+.product-state{
+    position: absolute;
+}
+.book-description h2{
+    font-weight: bold;
+}
+.book-description, .book-information-wrapper{
+    background: #FDF9F8;
+}
+.shop-dirrection{
+    color: red;
+}
+.book-description .price{
+    color: red;
+}
+.book-description .price::after{
+    content: "grn.";
+}
+.rate-star{
+    background-image: url("http://www.requitix.io/mypics/max/7/73053_gold-stars-png.png");
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.gray-star{
+    filter: grayscale(100%);
+}
+.detail-description-btn{
+    display: block;
+    bottom: 0;
+    position: absolute;
+}
+.thanks-page{
+    min-height: 400px;
+}
+.comment-input img, .comments-single-row img{
+    width:50px;
+    border-radius: 50%;
+}
+.comment-input .avatar{
+    padding: 2px;
+}
+.text-area textarea{
+    width: 100%;
+    max-height: 70px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+.comments-single-row{
+    font-size: 10px;
+    padding: 10px;
+}
+.carosele-image{
+    width:100%;
+}
+.badge-price{
+    bottom: 0px;
+    position: absolute;
+}
+.badge-price::after{
+    content: " grn.";
+}
+
+
+.booksColor{
+    color:green;
+  }
+  .facebook{
+    height: 40px;
+    margin: 10px;
+  }
+  .instagram{
+    height: 40px;
+    margin: 10px;
+  }
+  .twitter{
+    height: 40px;
+    margin: 10px;
+  }
+  .social-media{  
+    display: flex;
+    justify-content: center;
+  }
+  .page-footer.font-small{
+    padding-top: 30px;
+  }

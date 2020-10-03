@@ -1,0 +1,142 @@
+/*@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');*/
+:root {
+	--g: #2da84b; /*green*/
+	--dg: #09661f; /*dark green*/
+}
+/*body {
+font-family: 'Nanum Gothic', serif;
+}*/
+
+/*===========navigation==========*/
+
+header {
+	margin-bottom: 82px;
+}
+button.navbar-toggler:focus {
+	outline-color: var(--dg);
+}
+.logo {
+	font-size: 40px;
+	margin: 0;
+}
+.logo:first-of-type {
+	color: var(--g);
+}
+.logo:last-of-type {
+	color: black;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+.nav-item {
+	border-bottom: 1.5px solid #f8f9fa;
+}
+.nav-item:nth-child(3) {
+	margin-right: 20px;
+}
+.navbar-toggler {
+	border-color: var(--dg);
+}
+#log-in-out-tab {
+	color: var(--dg) !important;
+}
+.nav-item:hover:not(.in-modal) .nav-link {
+	color: var(--g) !important;
+	border-bottom: 1.5px solid var(--g) !important;
+}
+#log-in-out-tab:hover{
+	border-bottom: 1.5px solid var(--dg) !important;
+}
+.nav-link {
+	color: #212529 !important;
+	padding-bottom: 7px;
+}
+.nav-link.disabled {
+	color: var(--g) !important;
+	border-bottom: 1.5px solid var(--g);
+}
+.navbar .container {
+    width: 100%;
+    margin: 0 auto;
+}
+.menu-wrapper {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: top 0.3s;
+}
+
+/*==================body=============*/
+
+section p {					/*pack your text in <section> or not, but it should stretch*/
+	text-align: stretch;
+}
+
+/*=================footer==============*/
+
+.page-footer {
+	background-color: #ccc;
+}
+.facebook{
+	height: 40px;
+	margin: 10px;
+}
+.instagram{
+	height: 40px;
+	margin: 10px;
+}
+.twitter{
+	height: 40px;
+	margin: 10px;
+}
+.social-media{  
+	display: flex;
+	justify-content: center;
+}
+.page-footer.font-small{
+	padding-top: 30px;
+}
+/*===============modal===================*/
+.form-navbar {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+.modal-body {
+	padding-top: 0;
+}
+.carousel.slide {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#alert-block {
+	display: none;
+}
+#response-block{
+	display: none;
+}
+.modal-body {
+	font-size: 18px !important;
+}
+.modal-body input, select {
+	font-size: 18px !important;
+}
+#form-carousel .carousel-item {
+	height: 220px;
+}
+#exampleModalLong {
+	height: 550px;
+}
+#exampleModalLong input, select {
+	width: 98%;
+	margin-left: 5px;
+}
+#exampleModalLong label {
+	margin-left: 5px;
+}
+#logOutModal p {
+	margin-top: 22px;
+}

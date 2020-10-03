@@ -1,0 +1,9 @@
+.page-footer {
+	margin-top: 100px; 
+}
+.btn-success {
+	background-color: var(--g);
+}
+.btn-success:hover {
+	background-color: var(--dg);
+}
